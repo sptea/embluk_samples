@@ -1,0 +1,8 @@
+# Usage 
+# embulk guess seed.yml -o destination.yml
+
+in:
+  type: file
+  path_prefix: ./sample.csv
+ 
+out: {stdout: null}

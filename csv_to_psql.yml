@@ -1,0 +1,27 @@
+in:
+  type: file
+  path_prefix: ./sample.csv
+  parser:
+    charset: UTF-8
+    newline: CRLF
+    type: csv
+    delimiter: ','
+    quote: '"'
+    escape: '"'
+    trim_if_not_quoted: false
+    skip_header_lines: 1
+    allow_extra_columns: false
+    allow_optional_columns: true
+    columns:
+ 
+out:
+  type: postgresql
+  mode: replace
+  default_timezone: "Asia/Tokyo"
+  host: localhost
+  port: 5432
+  user: 
+  password: ""
+  database: 
+  schema: 
+  table: 
